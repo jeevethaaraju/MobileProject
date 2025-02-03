@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+        <!-- Admin Menu Icon -->
+        <ImageView
+            android:id="@+id/adminMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu"
+            android:contentDescription="Menu"
+            android:layout_gravity="end"
+            android:padding="8dp"
+            android:onClick="showAdminMenu" />
+    <Button
+        android:id="@+id/btn_addproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        android:onClick="showAddProductDialog"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adminOrdersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+
